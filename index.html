@@ -1,17 +1,18 @@
 <!DOCTYPE html>
 <html lang="jp">
-<head>
-    <meta charset="UTF-8">
-    <title>VueJS Tutorials</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css" class="">
+  <head>
+    <meta charset="UTF-8" />
+    <title>VueJS チュートリアル</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" class="" />
     <script src="https://unpkg.com/vue"></script>
-</head>
-<body>
+  </head>
+  <body>
     <div id="vue-app">
-        <h1 class="">{{ name }}</h1>
+      <h1 class="">{{greet('night')}}</h1>
+      <p class="">Name: {{ name }}</p>
+      <p class="">Job: {{ job }}</p>
     </div>
-    <script src="app.js">
-    </script>
-</body>
+    <script src="app.js"></script>
+  </body>
 </html>
