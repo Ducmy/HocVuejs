@@ -9,13 +9,13 @@
   </head>
   <body>
     <div id="vue-app">
-      <h1 class="">Key board Prevent</h1>
-      <label for="">Name</label>
-      <input type="text" v-model="name" />
-      <span class="">{{ name }}</span>
-      <label for="">Age</label>
-      <input type="text" v-model="age" />
-      <span class="">{{ age }}</span>
+      <h1>Computer Property</h1>
+      <button @click="a++">Add to A</button>
+      <button @click="b++">Add to B</button>
+      <p>A - {{a}}</p>
+      <p>B - {{b}}</p>
+      <p class="">Age + A = {{ addtoA }}</p>
+      <p class="">Age + B = {{ addtoB }}</p>
     </div>
     <script src="app.js"></script>
   </body>
