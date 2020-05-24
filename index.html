@@ -9,15 +9,11 @@
   </head>
   <body>
     <div id="vue-app">
-      <h1 class="">Events</h1>
-      <button @click="add(1)">Add</button>
-      <button v-on:click="sub(1)">Substract</button>
-      <button @dblclick="add(10)">Add 10 years</button>
-      <button v-on:dblclick="sub(10)">Substract 10 year</button>
-      <p class="">My age is {{age}}</p>
-     <div id="canvas" v-on:mousemove="updateXY">{{x}},{{y}}</div>
-     <a @click="click" href="http://hoclamwebnhanh.com" class="">Hoc Lam Web Nhanh</a> <br>
-     <a @click.prevent="click" href="http://hoclamwebnhanh.com" class="">Khong chuyen tiep page(Prevent)</a>
+     <h1 class="">Key board Prevent</h1>
+     <label for="">Name</label>
+     <input type="text" v-on:keyup.enter="logName">
+     <label for="">Age</label>
+     <input type="text" v-on:keyup.alt.enter="logAge">
     </div>
     <script src="app.js"></script>
   </body>
