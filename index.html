@@ -4,19 +4,18 @@
     <meta charset="UTF-8" />
     <title>VueJS チュートリアル</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css" class="" />
+    <link rel="stylesheet" href="style.css" class="" />
     <script src="https://unpkg.com/vue"></script>
   </head>
   <body>
     <div id="vue-app">
-      <h1 class="">Data Binding</h1>
-      <a v-bind:href="website">Hoc Lam Web Nhanh</a>
-      <input type="text" v-bind:value="job">
-      <p v-html="websiteTag"></p>
-
-      <h1 class="">{{greet('night')}}</h1>
-      <p class="">Name: {{ name }}</p>
-      <p class="">Job: {{ job }}</p>
+      <h1 class="">Events</h1>
+      <button @click="add(1)">Add</button>
+      <button v-on:click="sub(1)">Substract</button>
+      <button @dblclick="add(10)">Add 10 years</button>
+      <button v-on:dblclick="sub(10)">Substract 10 year</button>
+      <p class="">My age is {{age}}</p>
+     <div id="canvas" v-on:mousemove="updateXY">{{x}},{{y}}</div>
     </div>
     <script src="app.js"></script>
   </body>
