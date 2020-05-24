@@ -1,7 +1,10 @@
 //Tạo đối tượng vue mới
 new Vue({
   el: "#vue-app",
-  data: {},
+  data: {
+    age: "",
+    name: "",
+  },
   methods: {
     logName: function () {
       console.log("You are enter your name");

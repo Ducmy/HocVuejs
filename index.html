@@ -9,11 +9,13 @@
   </head>
   <body>
     <div id="vue-app">
-     <h1 class="">Key board Prevent</h1>
-     <label for="">Name</label>
-     <input type="text" v-on:keyup.enter="logName">
-     <label for="">Age</label>
-     <input type="text" v-on:keyup.alt.enter="logAge">
+      <h1 class="">Key board Prevent</h1>
+      <label for="">Name</label>
+      <input type="text" v-model="name" />
+      <span class="">{{ name }}</span>
+      <label for="">Age</label>
+      <input type="text" v-model="age" />
+      <span class="">{{ age }}</span>
     </div>
     <script src="app.js"></script>
   </body>
