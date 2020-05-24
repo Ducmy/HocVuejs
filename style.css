@@ -1,10 +1,18 @@
-body {
-    max-width: 800px;
-    margin: 0 auto;
+.available {
+    cursor: pointer;
 }
-#canvas {
-    width: 600px;
-    padding: 200px 20px;
-    text-align: center;
-    border: 1px solid #333;
+
+span {
+    color: red;
+    background: none;
+}
+.available  span{
+    color: gold;
+    background: green;
+    padding: 5px;
+}
+
+.nearby span:after {
+    content: "near by";
+    margin-left: 1em;
 }
